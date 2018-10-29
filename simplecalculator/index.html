@@ -1,0 +1,119 @@
+<?php
+
+$result_value = 0132;
+
+?>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+    <title>Calculator</title>
+
+    <style type="text/css"> 
+      table .btn {
+          width: 100%;
+          height: 100%;
+          border-radius: 2px;
+          padding: 15px 10px;
+          font-size: 20px;
+          box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+      }
+      .table td, .table th {
+          padding: 5px;
+      }
+      html,
+      body { 
+          height: 100%;
+          background-color: #f6f7fc;
+      } 
+
+      .page-header-index { padding: 5rem 1.5rem 3rem; text-align: center; } 
+
+      .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { 
+          xxcolor: #7952b3;
+      }
+
+      .page-wrapper {
+        background-color: white;
+        padding: 20px; 
+        border-radius: .25rem; 
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+      }
+
+      .form-control {  
+          background-color: #f6f7fc;
+          background-color: #eee;
+          border-color: #f6f7fc;
+      }
+      .result-display {
+        font-size: 35px;
+        text-align: right;
+        font-weight: bold;
+      }
+
+    </style>
+  </head>
+
+<body class="container" style=""> 
+
+  <div class="row align-items-center h-100">
+
+      <div class="col-md-8 page-wrapper mx-auto">
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th colspan="4" scope="col"><input type="text" class="form-control result-display" value="<?php echo $result_value; ?>" name="" placeholder="0"></th> 
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row"><form method="get" action="PHP_SAME_PG"><button type="button" value="a/c" class="btn btn-primary">A/C</button></form></td>
+                <td><form method="get" action="PHP_SAME_PG"><button type="button" value="+/-" class="btn btn-primary">+/-</button></form></td>
+                <td><form method="get" action="PHP_SAME_PG"><button type="button" value="%" class="btn btn-primary">%</button></form></td>
+                <td><form method="get" action="PHP_SAME_PG"><button type="button" value="/" class="btn btn-secondary">/</button></form></td>
+              </tr>
+              <tr>
+                <th scope="row"><form method="get" action="PHP_SAME_PG"><button type="button" value="7" class="btn btn-primary">7</button></form></th>
+                <td><form method="get" action="PHP_SAME_PG"><button type="button" value="8" class="btn btn-primary">8</button></form></td>
+                <td><form method="get" action="PHP_SAME_PG"><button type="button" value="9" class="btn btn-primary">9</button></form></td>
+                <td><form method="get" action="PHP_SAME_PG"><button type="button" value="*" class="btn btn-secondary">x</button></form></td>
+              </tr>
+              <tr>
+                <th scope="row"><form method="get" action="PHP_SAME_PG"><button type="4" value="00000" class="btn btn-primary">4</button></form></th>
+                <td><form method="get" action="PHP_SAME_PG"><button type="button" value="5" class="btn btn-primary">5</button></form></td>
+                <td><form method="get" action="PHP_SAME_PG"><button type="button" value="6" class="btn btn-primary">6</button></form></td>
+                <td><form method="get" action="PHP_SAME_PG"><button type="button" value="-" class="btn btn-secondary">-</button></form></td>
+              </tr>
+              <tr>
+                <th scope="row"><form method="get" action="PHP_SAME_PG"><button type="button" value="1" class="btn btn-primary">1</button></form></th>
+                <td><form method="get" action="PHP_SAME_PG"><button type="button" value="2" class="btn btn-primary">2</button></form></td>
+                <td><form method="get" action="PHP_SAME_PG"><button type="button" value="3" class="btn btn-primary">3</button></form></td>
+                <td><form method="get" action="PHP_SAME_PG"><button type="button" value="+" class="btn btn-secondary">+</button></form></td>
+              </tr>
+              <tr>
+                <td colspan="2"><form method="get" action="PHP_SAME_PG"><form method="get" action="PHP_SAME_PG"><button type="button" value="00000" class="btn btn-primary">0</button></form></form></td>
+                <th scope="row"><form method="get" action="PHP_SAME_PG"><button type="button" value="." class="btn btn-primary">.</button></form></th>
+                <td><form method="get" action="PHP_SAME_PG"><button type="button" value="=" class="btn btn-secondary">=</button></form></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </ul>
+      </div>
+
+      <div class="col">
+        <div class="page-header-index">
+          <img src="assets/calculator.svg" style="width: 20%;margin-bottom: 20px;">
+          <h3 class="text-primary">Calculator built on PHP</h3>
+          <p class="lead">What will you like to do today?</p>
+          <small>ctnels@gmail.com</small>
+          <div><small>Calculator&reg;</small></div>
+        </div>
+      </div>
+    </div>  
+
+  </body>
+</html>
